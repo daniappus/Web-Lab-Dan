@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heading</title>
+    <style>
+        body {
+            display: flex; 
+            align-items: flex-start; /* Align items to the top */
+            justify-content: center;
+            margin: 0; 
+            padding: 20px; 
+            background: url('mohan.jpg') no-repeat center center; /* Add background image */
+            background-size: cover; /* Cover the entire area */
+            height: 100vh;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+        }
+        .header {
+            display: flex;
+            align-items: center; 
+            z-index: 1; /* Ensure header is above overlay */
+            margin-top: 20px; /* Optional spacing */
+        }
+        img {
+            width: 100px; 
+            height: auto;
+            margin-right: 20px;
+        }
+        h1 {
+            font-family: Arial, sans-serif; 
+            color: #fff; /* Change heading color to white for contrast */
+            margin: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Overlay for background opacity -->
+    <div class="header">
+        <img src="logo.jpg" alt="MCET Logo">
+        <h1>MOHANDAS COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+    </div>
+</body>
+</html>

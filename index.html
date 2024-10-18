@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Menu</title>
+    <style>
+        body {
+            background-color: #4e3b31; /* Darker shade of brown */
+            color: #fff; /* White text for contrast */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between links */
+        }
+        .menu-link {
+            background-color: #6f4c3e; /* Slightly lighter brown for links */
+            color: #fff;
+            text-decoration: none; /* Remove underline */
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s;
+            display: block; /* Make links block elements */
+            text-align: center; /* Center text */
+        }
+        .menu-link:hover {
+            background-color: #8b5a3e; /* Lighter shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <div class="menu">
+        <a href="vision.html" class="menu-link" target="mainFrame">Vision and Mission</a>
+        <a href="facilities.html" class="menu-link" target="mainFrame">Facilities</a>
+        <a href="faculty.html" class="menu-link" target="mainFrame">Faculty</a>
+        <a href="schedule.html" class="menu-link" target="mainFrame">Schedule</a>
+        <a href="gallery.html" class="menu-link" target="mainFrame">Gallery</a>
+    </div>
+</body>
+</html>
