@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .break, .lunch {
+            background-color: #ffcccc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Timetable</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:30 - 9:30</td>
+                <td>ADS</td>
+                <td>ASE</td>
+                <td>WEB Lab</td>
+                <td>ASE</td>
+                <td>MFC</td>
+            </tr>
+            <tr>
+                <td>9:30 - 10:30</td>
+                <td>DF & CA</td>
+                <td>MFC</td>
+                <td>MFC</td>
+                <td>Programming Lab</td>
+                <td>WEB Lab</td>
+            </tr>
+            <tr class="break">
+                <td>10:30 - 10:45</td>
+                <td colspan="5">Break</td>
+            </tr>
+            <tr>
+                <td>10:45 - 11:45</td>
+                <td>ADS Lab</td>
+                <td>ADS</td>
+                <td>ADS</td>
+                <td>MFC</td>
+                <td>DF & CA</td>
+            </tr>
+            <tr class="lunch">
+                <td>11:45 - 12:30</td>
+                <td colspan="5">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>12:30 - 1:30</td>
+                <td rowspan="2">ADS Lab</td>
+                <td rowspan="2">DF & CA</td>
+                <td rowspan="2">Programming Lab</td>
+                <td>Entrpreneur</td>
+                <td rowspan="2">ASE</td>
+            </tr>
+            <tr>
+                <td>1:30 - 2:30</td>
+                <td>DF & CA</td>
+            </tr>
+            <tr>
+                <td>2:30 - 3:30</td>
+                <td>ASE</td>
+                <td>ADS</td>
+                <td>ADS Lab</td>
+                <td rowspan="2">MFC</td>
+                <td rowspan="2">MFC</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
